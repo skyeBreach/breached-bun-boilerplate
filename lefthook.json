@@ -1,0 +1,10 @@
+{
+    "commit-msg": {
+        "parallel": true,
+        "scripts": {
+            "commitlint.sh": {
+                "runner": "bash"
+            }
+        }
+    }
+}

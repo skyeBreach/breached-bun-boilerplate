@@ -1,0 +1,6 @@
+{
+    /* #region Formatting */
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome"
+    /* #endregion */
+}

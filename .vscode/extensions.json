@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "EditorConfig.EditorConfig",
+        "oven.bun-vscode",
+        "biomejs.biome",
+        "DavidAnson.vscode-markdownlint"
+    ]
+}

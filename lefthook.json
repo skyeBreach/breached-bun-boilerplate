@@ -4,7 +4,10 @@
         "commands": {
             "markdownlint": {
                 "glob": "*.{md,mdx}",
-                "run": "markdownlint-cli --dot {staged_files}"
+                "run": "bun run markdownlint-cli --dot {staged_files}"
+            },
+            "spellcheck": {
+                "run": "bun run cspell --no-must-find-files {staged_files}"
             }
         }
     },

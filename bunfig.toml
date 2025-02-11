@@ -3,10 +3,10 @@
 
 ## Script files to run prior to calling `bun run` on a file or script
 ## files that register plugins should be added to this list
-preload = []
+# preload = []
 
 ## Reduce memory usage at the cost of performance
-smol = false
+smol = true
 
 ## ------------------------------------------------------------------------------------------------------------------ ##
 ## Debugging
@@ -37,7 +37,7 @@ saveTextLockfile = true
 root = "./tests"
 
 ## Define the scripts we need to run prior to tests being called
-preload = []
+# preload = []
 
 ## Reduce memory usage at the cost of performance, only applies to the bun test runner
 smol = false

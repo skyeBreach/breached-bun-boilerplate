@@ -1,0 +1,18 @@
+pre-commit:
+  piped: true
+  jobs:
+    - name: lint
+      group:
+        piped: false
+        parallel: true
+        jobs:
+          - name: markdownlint
+            glob: "*.{md,mdx}"
+            run: bun run markdownlint-cli --dot {staged_files}
+          - name: spellcheck
+            run: bun run cspell --no-must-find-files {staged_files}
+commit-msg:
+  parallel: true
+  scripts:
+    commitlint.sh:
+      runner: "bash"

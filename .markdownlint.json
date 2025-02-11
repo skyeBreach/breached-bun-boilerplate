@@ -1,6 +1,5 @@
 {
     "default": true,
-    //"extends": "markdownlint/style/prettier",
     "MD003": { "style": "atx" },
     "MD004": {
         "style": "dash"

@@ -1,4 +1,13 @@
 {
+    "pre-commit": {
+        "parallel": true,
+        "commands": {
+            "markdownlint": {
+                "glob": "*.{md,mdx}",
+                "run": "markdownlint-cli --dot {staged_files}"
+            }
+        }
+    },
     "commit-msg": {
         "parallel": true,
         "scripts": {
